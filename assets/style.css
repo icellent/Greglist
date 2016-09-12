@@ -1,0 +1,127 @@
+/* custom resets*/
+
+body, header, main, h1, span, div, ul, li, a, input, img {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/*end*/
+header {
+    background: #eeeeee;
+    height: 70px;
+    border-bottom: 1px solid #999;
+}
+
+header > h1,
+header > nav {
+    line-height: 70px;
+    font-size: 28px;
+}
+
+header > h1 {
+    float: left;
+    margin-left: 15px;
+}
+.clear:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+header > nav {
+    float: right;
+    margin-right: 15px;
+}
+
+nav > ul > li {
+    display: inline-block;
+    margin-right: 5px;
+}
+nav > ul > li > a {
+    color: black;
+}
+
+main {
+    margin-left: 100px;
+    margin-top: 70px;
+}
+
+main > form > input {
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    outline: none;
+    padding-left: 5px;
+    vertical-align: middle;
+}
+main > form > input[placeholder*="Search"] {
+    font-size: 18px;
+}
+.search-form a {
+    display: inline-block;
+}
+
+.search-icon {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+
+section.search-nav {
+    margin: 30px 0;
+    border: 1px solid #dddddd;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+section.search-nav .prev,
+section.search-nav .next,
+section.search-nav .pagination {
+    display: inline-block;
+    padding: 10px 15px;
+    color: black;
+}
+section.search-nav .prev {
+    border-right: 1px solid #dddddd;
+}
+section.search-nav .prev::before {
+    content: "<";
+    display: inline-block;
+    margin-right: 3px;
+}
+
+section.search-nav .next {
+    border-left: 1px solid #dddddd;
+}
+section.search-nav .next::after {
+    content: ">";
+    display: inline-block;
+    margin-left: 3px;
+}
+
+ul.result {
+    font-size: 20px;
+    color: #aaaaaa;
+    list-style: none;
+    font-weight: bold;
+}
+
+ul.result > li {
+    margin: 15px 0;
+}
